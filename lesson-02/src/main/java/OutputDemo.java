@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class OutputDemo {
     public static void main(String[] args) {
         // Escape characters
@@ -36,7 +38,7 @@ public class OutputDemo {
         System.err.printf("%,d%n", 123456789);
 
         // VD: Tạo bảng
-        int[] ids = {1,2,3};
+        int[] ids = {1, 2, 3};
         String[] usernames = {"khoa.nv", "long.vuduc", "duy.nm"};
         System.err.println("+------+--------------------+");
         System.err.println("|  ID  |      USERNAME      |");
@@ -45,5 +47,7 @@ public class OutputDemo {
             System.err.printf("| %4d | %-18s |%n", ids[i], usernames[i]);
             System.err.println("+------+--------------------+");
         }
+
+        LocalDate minDate = LocalDate.now().minusYears(1);
     }
 }
