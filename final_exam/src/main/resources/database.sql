@@ -20,7 +20,7 @@ VALUES            ('Nguyễn Văn Khoa', 'khoa.nv@gmail.com' , '123456Q' , 'EMPL
 
 DROP PROCEDURE IF EXISTS find_by_email_and_password;
 DELIMITER $$
-CREATE PROCEDURE find_admin_by_email_and_password (
+CREATE PROCEDURE find_by_email_and_password (
 	IN in_email     VARCHAR(50),
     IN in_password  VARCHAR(50)
 )
